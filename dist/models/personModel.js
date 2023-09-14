@@ -43,5 +43,6 @@ const uuid_1 = require("uuid");
 const personSchema = new mongoose_1.Schema({
     _id: { type: String, default: uuid_1.v4 },
     name: { type: String, required: true },
+    age: { type: Number, required: false },
 });
 exports.Person = mongoose_1.default.model("Person", personSchema);

@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { v4 as uuidv4 } from "uuid";
 import { Person, IPerson } from "../models/personModel";
+// import { body, validationResult } from "express-validator";
 
 export const createPerson = async (
   req: Request,
@@ -21,7 +22,7 @@ export const createPerson = async (
 
     // Create a new person with the generated UUID
     const newPerson = new Person({
-      _id: personId, // Use the generated UUID as the ID
+      _id: personId,
       name,
     });
 

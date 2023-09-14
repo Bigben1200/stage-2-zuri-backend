@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deletePersonById = exports.updatePersonById = exports.getPersonById = exports.createPerson = void 0;
 const uuid_1 = require("uuid");
 const personModel_1 = require("../models/personModel");
+// import { body, validationResult } from "express-validator";
 const createPerson = async (req, res, next) => {
     try {
         const { name } = req.body;
