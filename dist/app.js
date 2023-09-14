@@ -17,6 +17,6 @@ app.use(body_parser_1.default.json());
 app.use("/api", usersRoute_1.default);
 //routes for crud
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`profile api is running at http://localhost:${port}/api?slack_name=BensonEniola&track=backend`);
 });
 exports.default = app;
